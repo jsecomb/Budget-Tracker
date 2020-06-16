@@ -20,6 +20,7 @@ class About extends Component {
       ...this.state,
       [event.target.id]: value
     });
+    console.log(this.state)
   };
 
   handleFormSubmit = event => {
