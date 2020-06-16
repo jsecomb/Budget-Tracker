@@ -1,0 +1,16 @@
+#Jumbotron {
+    padding:50px;
+}
+
+h1, h3 {
+    font-family: 'Vast Shadow', cursive;
+    padding-top:10px;
+}
+
+#currency {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    padding-top: 10px;
+}

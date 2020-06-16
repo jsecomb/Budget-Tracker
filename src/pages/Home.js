@@ -3,8 +3,7 @@ import Input from "../components/Input";
 import Table from "../components/Table";
 import LineChart from "../components/LineChart";
 import Container from "../components/Container";
-import Row from "../components/Row";
-import Col from "../components/Col";
+import Jumbotron from "../components/Jumbotron";
 
 class About extends Component {
   state = {
@@ -43,28 +42,22 @@ class About extends Component {
   render() {
     return (
       <>
-        <Container style={{ marginTop: 30 }}>
-          <div className="Jumbotron">
-            <h1>Dollaraire</h1>
-            <h2>Put your bux to work.</h2>
-          </div>
-          <Row>
-            <Col size="md-12">
-              <h1>Welcome To Dollaraire!</h1>
-            </Col>
-          </Row>
-          <Row>
-            <Col size="md-12">
-              <p>
-                Description of how Dollaraire works.
-              </p>
-            </Col>
-          </Row>
+        <Container style={{ marginTop: 15 }}>
+          <Jumbotron/>
+        </Container>
+        <Container style={{ marginTop: 15 }}>
+          <h3>Enter your expenses</h3>
           <Input
             handleFormSubmit={this.handleFormSubmit}
             handleInputChange={this.handleInputChange}
           />
-          <Table expenses={this.state.expenses} />
+        </Container>
+        <Container style={{ marginTop: 15 }}>
+          <h3>Expenses table</h3>
+          <Table expenses={this.state.expenses}/>
+        </Container>
+        <Container style={{ marginTop: 15 }}>
+          <h3>Expenses by day</h3>
           <LineChart props={this.state.expenses}/>
         </Container>
       </>

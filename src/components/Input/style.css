@@ -1,3 +1,13 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
 #expenseInput {
     padding: 20px;
 }
+
+#submit {
+    background-color: #768076;
+    border-color: black;
+}
+
