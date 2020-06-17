@@ -3,13 +3,15 @@ import Chart from "chart.js";
 import "./style.css";
 
 export default class LineGraph extends Component {
+    
     chartRef = React.createRef();
     
     componentDidMount() {
        const myChartRef = this.chartRef.current.getContext("2d");
-       //const {data} = this.props;
 
-       console.log(this.props)
+       let chartData = this.props.props.map(expense => expense[2])
+       console.log(chartData)
+       console.log(this.props.props)
         
         new Chart(myChartRef, {
             type: "line",
@@ -19,7 +21,7 @@ export default class LineGraph extends Component {
                 datasets: [
                     {
                         label: "Daily Expenditure ($)",
-                        data: [5,4,5,6,7],
+                        data: [1,2,3],
                     }
                 ]
             },

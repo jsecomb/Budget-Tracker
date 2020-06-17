@@ -20,7 +20,6 @@ class About extends Component {
       ...this.state,
       [event.target.id]: value
     });
-    console.log(this.state)
   };
 
   handleFormSubmit = event => {
@@ -59,7 +58,9 @@ class About extends Component {
         </Container>
         <Container style={{ marginTop: 15 }}>
           <h3>Expenses by day</h3>
-          <LineChart props={this.state.expenses}/>
+          <LineChart 
+          handleFormSubmit={this.handleFormSubmit}
+          props={this.state.expenses}/>
         </Container>
       </>
     );
