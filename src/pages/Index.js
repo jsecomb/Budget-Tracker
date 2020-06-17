@@ -5,7 +5,7 @@ import LineChart from "../components/LineChart";
 import Container from "../components/Container";
 import Jumbotron from "../components/Jumbotron";
 
-class About extends Component {
+class Index extends Component {
   state = {
     description: "",
     amount: 0,
@@ -58,9 +58,8 @@ class About extends Component {
         </Container>
         <Container style={{ marginTop: 15 }}>
           <h3>Expenses by day</h3>
-          <LineChart 
-          handleFormSubmit={this.handleFormSubmit}
-          props={this.state.expenses}/>
+          <LineChart
+          expenses={this.state.expenses}/>
         </Container>
       </>
     );
@@ -68,4 +67,4 @@ class About extends Component {
 }
 
 
-export default About;
+export default Index;
