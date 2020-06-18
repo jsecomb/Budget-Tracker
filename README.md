@@ -1,59 +1,79 @@
-# Unit 18 React Homework: Budget Tracker
+# Homework18 by Julian Secomb 
 
-## Overview
+[![HitCount](http://hits.dwyl.com/{jsecomb}/{Homework18}.svg)](http://hits.dwyl.com/{jsecomb}/{Homework18})
+![GitHub top language](https://img.shields.io/github/languages/top/jsecomb/Homework18?style=flat-square)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/jsecomb/Homework18?style=flat-square)
 
-For this assignment, you'll create a budget tracker with React. This assignment will require you to break up your application's UI into components, manage component state, and respond to user events.
+## Description: 
 
-## User Story
+This is a front-end budget tracker app built using React. The user can submit expenses (consisting of an amount($), description, and date) which are then displayed and summed in a table and a line graph below. The project served  required me to build React UI components, manage & access component state, and respond to user events. Implementing the line graph also involved learning how to integrate charts.js into React.
 
-* As a user, I want to be able to view all my expenses so that I have access to them and can see the total of my entered expenses.
+---
 
-## Business Context
+## Table of Contents:
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Resources](#resources)
+* [Tests](#tests)
+* [Questions](#questions)
 
-An employee or manager would benefit greatly from being able to view non-sensitive data about other employees. It would be particularly helpful to be able to filter employees by name.
+---
 
-## Acceptance Criteria
+## Istallation: 
 
-The application should render on a single page:
+No installation required.
 
-  * A form to input an expense.
+---
 
-  * A table of all expenses.
+## Usage: 
 
-  * A running total of entered expenses.
-  
-A user should be able to input an expense, consisting of: 
+[Deployed App](https://infallible-poitras-57d199.netlify.app/)
 
-  * A dollar amount
+User must enter expenses into the input field. Non integer & negative "amount" inputs result in a prompt to resubmit. 
 
-NO BACKEND IS NEEDED
+![UserInput](https://i.imgur.com/QgBfHij.png?1)
 
-## Commit Early and Often
+A chart and line graph showing all inputed expenses (and running total) displays below the input fields.
 
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
+![charts](https://i.imgur.com/fZXAOAN.png?1)
 
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills
+---
 
-2. Your commit history allows you to revert your code base in the event that you need to return to a previous state
+## License: 
 
-Follow these guidelines for committing:
+Please contact Julian Secomb (contact info below) regarding licensing.
 
-* Make single purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits
+Copyright © 2020 Julian Secomb
 
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history
+---
 
-* Don't commit half done work, for the sake of your collaborators (and your future self!)
+## Contributing:
 
-* Test your application before you commit to ensure functionality at every step in the development process
+Please contact Julian Secomb (contact info below) regarding contributions.
 
-We would like you to have well over 200 commits by graduation, so commit early and often!
+---
 
+## Resources:
 
-## Submission on BCS
+* Node.js
+* React js
+* Chart.js
+* React-chartjs-2 wrapper
+* Bootstrap
+* Google Fonts
 
-You are required to submit the following:
+---
 
-* the URL to the deployed application
+## Tests:
 
-* the URL to the Github repository
+No tests were performed beyond verifying basic functionality.
 
+---
+
+## Questions:
+
+If you have any questions, please contact Julian Secomb at hoodooprojects@gmail.com;
+
+<img src="https://avatars3.githubusercontent.com/u/59972103?v=4" alt="jsecomb"/>
